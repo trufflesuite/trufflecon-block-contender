@@ -1,0 +1,23 @@
+{
+  "name": "gas-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ganache": "ganache-cli -i 1337 --seed trufflecon2019 --host 0.0.0.0",
+    "truffle": "truffle migrate",
+    "web": "ws -d ./",
+    "start": "npm run ganache & npm run truffle && npm run web && fg"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethereumjs-util": "6.1.0",
+    "ethers": "4.0.33",
+    "ganache-cli": "6.6.0-beta.0",
+    "local-web-server": "3.0.7",
+    "solc": "0.5.10",
+    "truffle": "5.0.29"
+  }
+}
